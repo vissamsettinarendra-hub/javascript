@@ -1,9 +1,9 @@
 //conditional statement
 //1.if statement 
 // let age = 20;
-// if (age>18){
-//     console.log("Eligible:")
-// }
+if (age>18){
+    console.log("Eligible:")
+}
 //2.if else
 let age = 20;
 if (age>18){
