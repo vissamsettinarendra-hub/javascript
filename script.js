@@ -264,3 +264,49 @@ let nums = [10,20,30,40,50]
 
 let result2 = nums.slice(0,3)
 console.log(result2)
+
+//copy entire array
+//let nums = [10,20,30,40,50]
+
+//let result1 = nums.slice()
+//console.log(result1)
+
+//task:arr=[10,20,30,40,50,60]
+//crete a new array containing elements
+//from index 2 - 4
+// Task: Create a new array containing elements from index 2 to 4
+
+let arr2 = [10, 20, 30, 40, 50, 60];
+
+let newArray = arr2.slice(2, 5);
+
+console.log(newArray);
+
+//string::sequence of characters
+//closed '',"",``,
+// let name = "koduru";
+// let name1 = "machavaram";
+// let name2 = "mothadaka";
+let str = "Hello"
+
+console.log(str[0])
+console.log(str[1])
+console.log(str[2])
+console.log(str[3])
+
+//string length
+console.log(str.length)
+
+//Immutable
+str[0]="M";
+console.log(str)
+
+//traverse over the string
+for(i=0;i<str.length;i++){
+    console.log(str[i])
+}
+
+//for of
+for(let ch of str){
+    console.log(ch);
+}
