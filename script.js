@@ -210,3 +210,57 @@ for (let i = 1; i < arr.length; i++) {
 }
 
 console.log(largest);
+
+//push -- adding element
+arr.push(5)
+console.log(arr)
+
+arr.push(19,44)
+console.log(arr)
+
+//remove the last element
+arr.pop()
+console.log(arr)
+
+//restoring the removed element
+let removed = arr.pop();
+console.log(removed)
+
+//remove the first element
+arr.shift();
+console.log(arr);
+
+let firstremoved = arr.shift();
+console.log(firstremoved);
+
+//add element at the beginning
+arr.unshift(10);
+console.log(arr)
+
+
+//python -- slicing
+//arr[start:end:step]
+//splice() --js
+//used for --1.adding 2.deleting elements
+
+//Syntax:
+// Array.splice(startIndex,delete_index,new_values)
+
+let veggies = ["Carrot","Betroot","Brinjial"]
+veggies.splice(1,1)
+//1 -->startindex
+//1 -->deleteindex
+console.log(veggies)
+//addding element
+veggies.splice(1,0,"bitter guard")
+console.log(veggies)
+//replacing element
+veggies.splice(1,1,"bottle guard")
+console.log(veggies)
+
+//slice creates a copy of a portion of array
+//arrary.slice(start,end)
+let nums = [10,20,30,40,50]
+
+let result2 = nums.slice(0,3)
+console.log(result2)
