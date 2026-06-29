@@ -310,3 +310,54 @@ for(i=0;i<str.length;i++){
 for(let ch of str){
     console.log(ch);
 }
+
+//string methods
+let firstname = "raju"
+console.log(firstname.toUpperCase());
+console.log(firstname.toLowerCase());
+
+//removing the extra spaces
+let hello = " Bye ";
+console.log(hello.trim());
+
+//include()
+let course = "JavaScript";
+console.log(course.includes("Script"))
+
+//startwith
+console.log(firstname.startsWith("r"))
+//ends with
+console.log(firstname.endsWith("u"))
+
+//indexof:
+console.log(firstname.indexOf("r"))
+
+//lastindexof:
+console.log(firstname.lastIndexOf("a"))
+
+//replace:
+let str1 = "I Love javascript"
+
+console.log(str1.replace("javascript","python"));
+// console.log(str1)
+
+//replaceall:
+let str2 = "cat dog cat"
+console.log(str2.replaceAll("cat","lion"));
+
+//slice:
+console.log(course.slice(0,3));
+
+//substring:
+let str3 = "programming"
+console.log(str3.substring(3,8));
+
+//split:
+let str4 = "HTML,CSS,JS,RECACT"
+console.log(str4.split(","));
+
+//charAt:
+// console.log(str4,charAt(4));
+
+//concat():
+let first = "n"
