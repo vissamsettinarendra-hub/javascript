@@ -88,13 +88,13 @@ for (let j=6;j>=1;j--){
 }   
 console.log(fact);
 
-//while loop
+// while loop
 // let i =1;
 // while(i<=5){
 //     console.log(i);
 //     i++;
 // }
-//do while
+// do while
 // let password;
 // do{
 //     password = prompt("enter the password");
