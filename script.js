@@ -121,11 +121,11 @@ let display = function(){
 display()
 
 //hoisting with function expression
-// test2()
+test2()
 
-// let test2 = function(){
-//     console.log("Hi")
-// }
+let test2 = function(){
+    console.log("Hi")
+}
 //example 2:
 
 let calculate_area = function(length,width){
