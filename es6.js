@@ -216,7 +216,6 @@ let arr2=[...arr1];
 arr2.push(60);
 console.log(arr1);
 console.log(arr2);
-
 //example-3:
 let frontend=["HTML","CSS"]
 let backend=["Node","Express"]
@@ -245,3 +244,43 @@ let merged = {
     ...address
 };
 console.log(merged)
+
+//rest parameaters:(...)
+//spread -->expand the values
+//rest -->collect the values
+
+//syntax:
+//function demo(...values){}
+
+function sum_demo(...numbers){
+    let total = 0
+    for(let num of numbers){
+        total +=num;
+
+    }
+    return total;
+};
+console.log(sum_demo(10,20,30))
+function student_marks(name,...marks){
+console.log(name);
+console.log(marks);
+};
+student_marks("rahul",80,40);
+
+//enhanched objects literals
+//object creation will shorter
+let f_Name = "reddy";
+let l_name = "ammaie";
+//self.name = name
+let Employee = {
+    f_Name:f_Name,
+    l_name:l_name
+};
+console.log(Employee)
+
+//with ES6
+let company={
+    f_Name,
+    l_name
+};
+console.log(company)
