@@ -70,8 +70,8 @@ const addition = (a,b) =>{
 }
 console.log(addition(10,20))
 
-//task:create an arrow func
-//to calculate simple interest
+// task:create an arrow func
+// to calculate simple interest
 
 
 
