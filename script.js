@@ -360,4 +360,127 @@ console.log(str4.split(","));
 // console.log(str4,charAt(4));
 
 //concat():
-let first = "n"
+let first = "narendra"
+let last = "naidu"
+console.log(first.concat(" ",last));
+
+//objects :collection of key:value pairs
+let student = {
+    name:"bala",
+    rollno:22.0,
+    course:"java",
+    is_permanent :true
+};
+console.log(student)
+console.log(student.name)
+console.log(student.rollno)
+console.log(student["course"])
+
+//add a new property
+student.city = "guntur"
+console.log(student.city)
+
+//update the values
+student.rollno = 9;
+console.log(student.rollno)
+
+
+//delete property
+delete student.city;
+console.log(student)
+
+//task:create an object
+//named:employee
+//store the detailes of employee
+//update the salarly to 45000
+//remove his city
+//write a function expression inside
+//the object and call it outside
+// Create an object named employee
+//add birth details in a nested onj
+let employee = {
+    name: "Narendra",
+    empId: 101,
+    department: "IT",
+    salary: 40000,
+    city: "Guntur",
+
+
+    // Function expression inside the object
+    display: function() {
+        console.log(this.name);
+        console.log( this.empId);
+        console.log(this.department);
+        console.log( this.salary);
+    }
+};
+
+// Update the salary
+employee.salary = 45000;
+
+// Remove the city
+delete employee.city;
+
+// Call the function outside the object
+employee.display();
+
+// Display the final object
+console.log(employee);
+
+
+//nested object
+// Nested object example
+
+let employee1 = {
+    name: "Rahul",
+    empId: 102,
+    salary: 40000,
+
+    address: {
+        city: "Hyderabad",
+        state: "Telangana",
+        pincode: 500001
+    },
+
+    display: function() {
+        console.log( this.name);
+        console.log(this.empId);
+        console.log(this.salary);
+        console.log(this.address.city);
+    }
+};
+
+// Update salary
+employee1.salary = 45000;
+
+// Remove city from the nested object
+// delete employee1.address.city;
+
+// Call the function
+employee1.display();
+
+// Print the complete object
+console.log(employee1);
+
+
+//traversing over the objects
+let student1 = {
+    name: "Bala",
+    rollNo: 22,
+    course: "Java",
+    city: "Guntur"
+};
+
+for (let key in student1) {
+    console.log(key, ":", student1[key]);
+}
+//only keys
+console.log(Object.keys(employee1))
+
+//in a list formate
+console.log(Object.entries(employee1));
+
+//for..of
+for (let [key, value] of Object.entries(employee1)) {
+    console.log(key, value);
+}
